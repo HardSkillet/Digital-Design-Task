@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace War_and_piece
+namespace WarAndPiece
 {
     class Program
     {
