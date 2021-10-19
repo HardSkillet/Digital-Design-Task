@@ -22,11 +22,8 @@ namespace ClassHomework
                 foreach (Match match in matches)
                 {
                     if (Regex.IsMatch(match.Value, @"\d\d*")) continue;
-                    lock (answer)
-                    {
-                        if (answer.ContainsKey(match.Value.ToLower())) answer[match.Value.ToLower()]++;
+                    if (answer.ContainsKey(match.Value.ToLower())) answer[match.Value.ToLower()]++;
                         else answer.Add(match.Value.ToLower(), 1);
-                    }
                 }
             }
         }
